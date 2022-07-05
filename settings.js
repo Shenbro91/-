@@ -1,16 +1,16 @@
 
 𝒓𝒆𝒅 𝒃𝒍𝒂𝒄𝒌𝒚 𝑴𝑫 𝘽𝙮 ᑎIՏᕼᗴᑎ
-𝙋𝙪𝙗𝙡𝙞𝙘 𝘿𝙖𝙩𝙚 - 2022 / 07 / 03 
+𝙋𝙪𝙗𝙡𝙞𝙘 𝘿𝙖𝙩𝙚 - 2022 / 07 / 05 
 𝙏𝙝𝙖𝙣𝙠𝙨 𝙏𝙤 𝙎𝙘𝙧𝙞𝙥𝙩 𝙁𝙧𝙤 𝙂𝙤𝙟𝙤 𝙎𝙖𝙩𝙤𝙧𝙪
 
 𝙏𝙝𝙖𝙣𝙠𝙨 𝙏𝙤
-          𝘼𝙡𝙡 𝙃𝙚𝙡𝙥𝙚𝙧𝙨 💞
+          𝘼𝙡𝙡 𝙃𝙚𝙡𝙥𝙚𝙧𝙨 
 */
 
 
 
-const fs = require('fs')
-const chalk = require('chalk')
+constfs = require('fs')
+constchalk = require('chalk')
 
 //global api
 global.fbapi = 'dd79-1aeb-21a3' // Facebook download 2 api
@@ -78,10 +78,10 @@ global.limitawal = {
 
 global.thumb = fs.readFileSync('./image/Elisa.jpg')
 global.imgalive = fs.readFileSync('./image/Elisa.jpg')
-let file = require.resolve(__filename)
+letfile = require.resolve(__filename)
 fs.watchFile(file, () => {
    fs.unwatchFile(file)
    console.log(chalk.redBright(`Update'${__filename}'`))
-   delete require.cache[file]
+   deleterequire.cache[file]
    require(file)
 })
